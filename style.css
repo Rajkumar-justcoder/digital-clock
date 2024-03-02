@@ -1,0 +1,96 @@
+/* lets reset marging and padding  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* set html and body height to full */
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background-color: #131419;
+    color: cyan
+}
+
+.mainsection {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.clockmain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-large;
+    font-weight: 600;
+    padding: 30px 40px;
+    border-radius: 10px;
+    background-color: #131419;
+    box-shadow: -3px -3px 7px rgba(66, 66, 66, 0.5), 3px 3px 5px rgba(0, 0, 0, 0.5);
+    animation: rgbcolor 10s infinite;
+}
+
+/* if u want u can change box-shadow too with that  and removde default box-shadow  */
+
+@keyframes rgbcolor {
+    0% {
+        color: #2982ff;
+        text-shadow: 0 0 5px #000;
+        /* box-shadow: 0 0 7px #2982ff; */
+    }
+
+    50% {
+        color: #cc4343;
+        text-shadow: 0 0 5px #ff0000;
+        /* box-shadow: 0 0 7px #cc4343; */
+    }
+}
+
+
+
+/* lets add support to other borwsers i added all for moz and webkit based browsers u can keep what u want ot normal + webkit and moz for display correct in that browser */
+
+@-moz-keyframes rgbcolor {
+    0% {
+        color: #2982ff;
+        text-shadow: 0 0 5px #000;
+    }
+
+    50% {
+        color: #cc4343;
+        text-shadow: 0 0 5px #ff0000;
+    }
+}
+
+@-webkit-keyframes rgbcolor {
+    0% {
+        color: #2982ff;
+        text-shadow: 0 0 5px #000;
+    }
+
+    50% {
+        color: #cc4343;
+        text-shadow: 0 0 5px #ff0000;
+    }
+}
+
+@-o-keyframes rgbcolor {
+    0% {
+        color: #2982ff;
+        text-shadow: 0 0 5px #000;
+    }
+
+    50% {
+        color: #cc4343;
+        text-shadow: 0 0 5px #ff0000;
+    }
+}
